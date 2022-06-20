@@ -13,3 +13,4 @@ export interface Language {
 }
 
 //export all the functions from the user.ts file
+module.exports = {LanguageResult, Language};
