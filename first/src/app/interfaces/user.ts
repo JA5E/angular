@@ -8,6 +8,7 @@ export interface UserResult{
 export interface User{
     id: number;
     name: string;
-    description: string;
-    year: number;
+    first_name: string;
+    last_name: string;
+    avatar: string;
 }
