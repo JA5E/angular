@@ -1,7 +1,7 @@
 <p>about works!</p>
-
+    <div class="row">
         <ul class="team-list sort-destination" data-sort-id="team">
-            <li class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership" *ngFor="let user of users" class="card">
+            <li *ngFor="let user of users" class="card" class="col-md-3 col-sm-6 col-xs-12 isotope-item leadership">
                 <div class="team-item thumbnail">
                     <a href="about-me.html" class="thumb-info team">
                         <img class="img-responsive" alt="avatar" src="{{user.avatar}}">
@@ -21,6 +21,7 @@
                 </div>
             </li>
         </ul>
+    <div class="row">
 <!--
 <div>
     <img src="{{user.avatar}}" alt="avatar">
