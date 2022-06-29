@@ -8,6 +8,9 @@ import { LoginComponent } from './pages/login/login.component';
 import { AboutComponent } from './pages/about/about.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './partial/header/header.component';
+import { FooterComponent } from './partial/footer/footer.component';
+import { MenuComponent } from './partial/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { AppRoutingModule } from './app-routing.module';
     DashboardComponent,
     LoginComponent,
     AboutComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    HeaderComponent,
+    FooterComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
