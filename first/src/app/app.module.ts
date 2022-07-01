@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './partial/header/header.component';
 import { FooterComponent } from './partial/footer/footer.component';
 import { MenuComponent } from './partial/menu/menu.component';
+import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MenuComponent } from './partial/menu/menu.component';
     NotfoundComponent,
     HeaderComponent,
     FooterComponent,
-    MenuComponent
+    MenuComponent,
+    MaintenanceComponent
   ],
   imports: [
     BrowserModule,

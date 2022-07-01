@@ -6,6 +6,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 
 const routes:Routes = [
 {
@@ -22,6 +23,9 @@ const routes:Routes = [
 },
 {
   path:'',pathMatch:'full',redirectTo:'/home'
+},
+{
+  path:'maintenance',component: MaintenanceComponent
 },
 {
   path:'**',component:NotfoundComponent
