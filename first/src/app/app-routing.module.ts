@@ -10,25 +10,25 @@ import { MaintenanceComponent } from './pages/maintenance/maintenance.component'
 
 const routes:Routes = [
 {
-  path:'home',component:HomeComponent
+  path:'home',component:HomeComponent,title:"Home page"
 },
 {
-  path:'about',component:AboutComponent
+  path:'about',component:AboutComponent, title:"About"
 },
 {
-  path:'dashboard',component:DashboardComponent
+  path:'dashboard',component:DashboardComponent,title:"Dashboard"
 },
 {
-  path:'login',component:LoginComponent
+  path:'login',component:LoginComponent,title:"Login"
 },
 {
   path:'',pathMatch:'full',redirectTo:'/home'
 },
 {
-  path:'maintenance',component: MaintenanceComponent
+  path:'maintenance',component: MaintenanceComponent,title:"Maintenance"
 },
 {
-  path:'**',component:NotfoundComponent
+  path:'**',component:NotfoundComponent, title:"Not Found"
 }
 ];
 
