@@ -7,10 +7,15 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
+import { MainComponent } from './admin/main/main.component';
+import { AuthGuard, authLogin } from './guard/auth.guard';
 
 const routes:Routes = [
 {
-  path:'home',component:HomeComponent,title:"Home page"
+  path:'home',component:HomeComponent,title:"Home page", canActivate: [authLogin]
+},
+{
+  path:'admin',component:MainComponent,title:"Admin", canActivate: [AuthGuard]
 },
 {
   path:'about',component:AboutComponent, title:"About"
