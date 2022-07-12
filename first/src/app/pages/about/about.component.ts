@@ -14,6 +14,7 @@ export class AboutComponent implements OnInit {
 
   constructor(private service: UsersService) { 
     this.getUsers();
+    this.giveMeLanguages();
   }
 
   ngOnInit(): void {
