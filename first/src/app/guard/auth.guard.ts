@@ -8,7 +8,7 @@ import { AuthService, LoginService } from '../services/auth.service';
 })
 export class AuthGuard implements CanActivate {
   
-  auth: boolean = false;
+  auth: boolean = true;
 
   constructor(private _authService:AuthService){
     this.auth =_authService.authenticate();
@@ -23,7 +23,7 @@ export class AuthGuard implements CanActivate {
 }
 export class authLogin implements CanActivate {
   
-  auth: boolean = false;
+  auth: boolean = true;
 
   constructor(private _authService:LoginService){
     this.auth =_authService.authenticate();

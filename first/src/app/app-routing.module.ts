@@ -10,6 +10,9 @@ import { MaintenanceComponent } from './pages/maintenance/maintenance.component'
 import { MainComponent } from './admin/main/main.component';
 import { AuthGuard, authLogin } from './guard/auth.guard';
 
+import { PostsComponent } from './pages/posts/posts.component';
+import { CommentsComponent } from './pages/comments/comments.component';
+
 const routes:Routes = [
 {
   path:'home',component:HomeComponent,title:"Home page", canActivate: [authLogin]
@@ -26,6 +29,17 @@ const routes:Routes = [
 {
   path:'login',component:LoginComponent,title:"Login"
 },
+{
+  path:'posts',component:PostsComponent,title:"Posts"
+},
+{
+  path:'comments',component:CommentsComponent, title:"Comments", children:[
+    {
+      path:'**',component:CommentsComponent,title:"Comments"
+    }
+  ]
+}
+,
 {
   path:'',pathMatch:'full',redirectTo:'/home'
 },
