@@ -13,6 +13,8 @@ import { FooterComponent } from './partial/footer/footer.component';
 import { MenuComponent } from './partial/menu/menu.component';
 import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 import { MainComponent } from './admin/main/main.component';
+import { PostsComponent } from './pages/posts/posts.component';
+import { CommentsComponent } from './pages/comments/comments.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { MainComponent } from './admin/main/main.component';
     FooterComponent,
     MenuComponent,
     MaintenanceComponent,
-    MainComponent
+    MainComponent,
+    PostsComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
